@@ -1,7 +1,7 @@
+import { baseURL, cookieName } from './config';
+
 import axios from 'axios';
 import cookie from 'cookiejs';
-
-import { baseURL, cookieName } from './config';
 
 export const instance = axios.create({
   baseURL,
