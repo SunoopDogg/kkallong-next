@@ -4,4 +4,4 @@ const productionHost = 'https://api.example.com';
 export const baseURL =
   process.env.NODE_ENV === 'production' ? productionHost : developmentHost;
 
-export const cookieName = 'HyperBookToken';
+export const cookieName = 'example-cookie';

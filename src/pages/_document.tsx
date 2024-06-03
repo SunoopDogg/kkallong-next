@@ -7,7 +7,7 @@ import Document, {
   NextScript,
 } from 'next/document';
 
-import { StyleProvider, createCache, extractStyle } from '@ant-design/cssinjs';
+import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs';
 import { ServerStyleSheet } from 'styled-components';
 
 export default function MyDocument() {
