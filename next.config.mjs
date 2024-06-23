@@ -39,10 +39,6 @@ const nextConfig = {
     'rc-upload',
     'rc-util',
   ],
-
-  experimental: {
-    forceSwcTransforms: true,
-  },
 };
 
 export default nextConfig;

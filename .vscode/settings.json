@@ -5,8 +5,18 @@
     "cookiejs",
     "cssinjs",
     "kkallong",
+    "sider",
     "stayled",
     "tanstack",
     "trivago"
-  ]
+  ],
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": ".yarn/sdks",
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsserver.experimental.useVsCodeWatcher": false
 }
