@@ -9,26 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ant-design/cssinjs": "^1.21.0",
-    "@ant-design/icons": "^5.3.7",
-    "@tanstack/react-query": "^5.45.1",
-    "antd": "^5.18.3",
-    "axios": "^1.7.2",
+    "@ant-design/cssinjs": "^1.21.1",
+    "@ant-design/icons": "^5.4.0",
+    "@tanstack/react-query": "^5.52.2",
+    "antd": "^5.20.3",
+    "axios": "^1.7.5",
     "cookiejs": "^2.1.3",
-    "next": "14.2.4",
+    "next": "14.2.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.12"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^20.14.8",
-    "@types/react": "^18.3.3",
+    "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "eslint": "^8",
-    "eslint-config-next": "14.2.4",
-    "eslint-plugin-prettier": "^5.1.3",
-    "prettier": "^3.3.2",
-    "typescript": "^5.5.2"
+    "eslint-config-next": "14.2.7",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
   }
 }
