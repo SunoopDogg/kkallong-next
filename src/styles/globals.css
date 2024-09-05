@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'Pretendard-Regular';
+
+  /* remove scroll bar */
+  &::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  html {
+    /* 20px */
+    font-size: 1.3889vw;
+  }
+}

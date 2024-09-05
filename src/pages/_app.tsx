@@ -3,6 +3,10 @@ import { QueryClientProvider } from '@tanstack/react-query';
 
 import type { AppProps } from 'next/app';
 
+import '@/styles/fonts.css';
+import '@/styles/globals.css';
+import '@/styles/value.css';
+
 import { antdThemeConfig } from '@/theme/config';
 import { ConfigProvider } from 'antd';
 import koKR from 'antd/locale/ko_KR';

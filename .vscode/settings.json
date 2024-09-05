@@ -5,8 +5,10 @@
     "cookiejs",
     "cssinjs",
     "kkallong",
+    "pretendard",
     "sider",
     "stayled",
+    "tailwindcss",
     "tanstack",
     "trivago"
   ],
