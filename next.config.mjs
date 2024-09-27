@@ -2,6 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
 
+  compiler: {
+    styledComponents: true,
+  },
+
   transpilePackages: [
     '@ant-design',
     '@rc-component',

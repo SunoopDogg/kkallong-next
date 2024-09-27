@@ -14,14 +14,17 @@ module.exports = {
   importOrder: [
     'react',
     'next',
-    '^~(.+)$',
+    '<THIRD_PARTY_MODULES>',
+    '^@/',
+    '^[a-zA-Z/\\-]',
     '^[./]',
-    '^[a-zA-Z@/\\-]*\\.[a-zA-Z0-9]*$',
-    '^(.+)$',
   ],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
   importOrderCaseInsensitive: true,
   experimentalBabelParserPluginsList: ['jsx', 'typescript', 'typescriptreact'],
-  plugins: [require.resolve('@trivago/prettier-plugin-sort-imports')],
+  plugins: [
+    require.resolve('@trivago/prettier-plugin-sort-imports'),
+    require.resolve('prettier-plugin-tailwindcss'),
+  ],
 };
