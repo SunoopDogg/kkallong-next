@@ -3,11 +3,10 @@ import { ConfigProvider } from 'antd';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 
+import '@/src/1app/css/globals.css';
 import { antdTheme } from '@/src/1app/theme';
 
 import { AntdRegistry } from '@ant-design/nextjs-registry';
-
-import './globals.css';
 
 const pretendardFont = localFont({
   src: '../public/fonts/PretendardVariable.woff2',
