@@ -1,0 +1,11 @@
+name: kkallong-next
+
+services:
+  web:
+    build: .
+    container_name: kkallong-next-front
+    tty: true
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/root/kkallong-next
