@@ -5,10 +5,9 @@
   },
   "eslint.nodePath": ".yarn/sdks",
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "cSpell.words": [
-    "kkallong"
-  ],
+  "cSpell.words": ["kkallong", "trivago"],
   "material-icon-theme.folders.customClones": [
     {
       "name": "fsd-app",
@@ -46,6 +45,5 @@
       "color": "#ab47bc",
       "folderNames": ["6shared"]
     }
-  ],
-  "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs"
+  ]
 }

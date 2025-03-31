@@ -1,30 +1,12 @@
 module.exports = {
-  arrowParens: 'avoid',
-  endOfLine: 'lf',
-  singleQuote: true,
+  printWidth: 80,
   trailingComma: 'all',
-  overrides: [
-    {
-      files: '*.json',
-      options: {
-        printWidth: 100,
-      },
-    },
-  ],
-  importOrder: [
-    'react',
-    'next',
-    '<THIRD_PARTY_MODULES>',
-    '^@/',
-    '^[a-zA-Z/\\-]',
-    '^[./]',
-  ],
+  singleQuote: true,
+  semi: true,
+  importOrder: ['^next', '^react', '^@/(.*)$', '^@', '^[./]'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
-  importOrderCaseInsensitive: true,
-  experimentalBabelParserPluginsList: ['jsx', 'typescript', 'typescriptreact'],
   plugins: [
     require.resolve('@trivago/prettier-plugin-sort-imports'),
-    require.resolve('prettier-plugin-tailwindcss'),
   ],
 };
