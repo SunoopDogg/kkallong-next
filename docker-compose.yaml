@@ -2,7 +2,7 @@ services:
   kkallong-next:
     build:
       context: .
-    image: node22.19.0:slim-debian13
+    image: node22.19.0-python3.13.7:trixie-slim-uv
     container_name: kkallong-next
     tty: true
     ipc: host
@@ -12,3 +12,17 @@ services:
     volumes:
       - .:/root/kkallong-next
       - /tmp/.X11-unix:/tmp/.X11-unix
+
+  kkallong-next-gpu:
+    extends:
+      service: kkallong-next
+    container_name: kkallong-next-gpu
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    profiles:
+      - gpu
