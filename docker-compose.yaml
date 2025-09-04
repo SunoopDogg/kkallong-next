@@ -1,11 +1,14 @@
-name: kkallong-next
-
 services:
-  web:
-    build: .
-    container_name: kkallong-next-front
+  kkallong-next:
+    build:
+      context: .
+    image: node22.19.0:slim-debian13
+    container_name: kkallong-next
     tty: true
-    ports:
-      - '3000:3000'
+    ipc: host
+    environment:
+      - DISPLAY=${DISPLAY:-host.docker.internal:0}
+      - QT_X11_NO_MITSHM=1
     volumes:
       - .:/root/kkallong-next
+      - /tmp/.X11-unix:/tmp/.X11-unix
