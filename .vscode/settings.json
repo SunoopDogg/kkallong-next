@@ -7,43 +7,59 @@
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "cSpell.words": ["kkallong", "pretendard", "trivago"],
+  "cSpell.words": [
+    "kkallong",
+    "pretendard",
+    "trivago"
+  ],
   "material-icon-theme.folders.customClones": [
     {
       "name": "fsd-app",
       "base": "folder-app",
       "color": "#ef5350",
-      "folderNames": ["1app"]
+      "folderNames": [
+        "1app"
+      ]
     },
     {
       "name": "fsd-pages",
       "base": "folder-views",
       "color": "#ff7043",
-      "folderNames": ["2pages"]
+      "folderNames": [
+        "2pages"
+      ]
     },
     {
       "name": "fsd-widgets",
       "base": "folder-components",
       "color": "#c0ca33",
-      "folderNames": ["3widgets"]
+      "folderNames": [
+        "3widgets"
+      ]
     },
     {
       "name": "fsd-features",
       "base": "sandbox",
       "color": "#1e88e5",
-      "folderNames": ["4features"]
+      "folderNames": [
+        "4features"
+      ]
     },
     {
       "name": "fsd-entities",
       "base": "folder-element",
       "color": "#ab47bc",
-      "folderNames": ["5entities"]
+      "folderNames": [
+        "5entities"
+      ]
     },
     {
       "name": "fsd-shared",
       "base": "folder-shared",
       "color": "#ab47bc",
-      "folderNames": ["6shared"]
+      "folderNames": [
+        "6shared"
+      ]
     }
   ]
 }
