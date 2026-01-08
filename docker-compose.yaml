@@ -2,7 +2,7 @@ services:
   kkallong-next:
     build:
       context: .
-    image: node22.19.0-python3.13.7:trixie-slim-uv
+    image: python3.14.2:trixie-slim-uv-bun
     container_name: kkallong-next
     tty: true
     ipc: host
