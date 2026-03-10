@@ -3,11 +3,7 @@ module.exports = {
   trailingComma: 'all',
   singleQuote: true,
   semi: true,
-  importOrder: ['^next', '^react', '^@/(.*)$', '^@', '^[./]'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
-  plugins: [
-    require.resolve('@trivago/prettier-plugin-sort-imports'),
-    require.resolve('prettier-plugin-tailwindcss'),
-  ],
+  plugins: [require.resolve('prettier-plugin-tailwindcss')],
 };
