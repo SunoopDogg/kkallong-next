@@ -9,6 +9,7 @@ RUN apt update
 RUN apt install -y --no-install-recommends \
         ca-certificates \
         curl \
+        libatomic1 \
         unzip
 
 # Git
