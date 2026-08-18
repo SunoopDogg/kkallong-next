@@ -37,12 +37,14 @@ USER $USERNAME
 WORKDIR /home/$USERNAME
 
 # uv installation
+ENV PATH=/home/$USERNAME/.local/bin:$PATH
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # nvm installation
+ENV PATH=/home/$USERNAME/.nvm/current/bin:$PATH
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-ENV NVM_DIR=/home/$USERNAME/.nvm
-RUN . "$NVM_DIR/nvm.sh" && nvm install --lts
+RUN bash -c '. ~/.nvm/nvm.sh && NVM_SYMLINK_CURRENT=true nvm install --lts'
 
 # bun installation
+ENV PATH=/home/$USERNAME/.bun/bin:$PATH
 RUN curl -fsSL https://bun.sh/install | bash
