@@ -5,13 +5,13 @@ services:
       context: .
     container_name: kkallong-next
     volumes:
-      - .:/root/${COMPOSE_PROJECT_NAME}
+      - .:/workspace/${COMPOSE_PROJECT_NAME}
       - /tmp/.X11-unix:/tmp/.X11-unix
     environment:
       - DISPLAY=${DISPLAY:-host.docker.internal:0}
       - QT_X11_NO_MITSHM=1
     network_mode: host
-    working_dir: /root/${COMPOSE_PROJECT_NAME}
+    working_dir: /workspace/${COMPOSE_PROJECT_NAME}
     ipc: host
     tty: true
 
