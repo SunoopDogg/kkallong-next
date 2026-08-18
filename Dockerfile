@@ -11,11 +11,9 @@ RUN apt install -y --no-install-recommends \
         curl \
         unzip
 
-# Git and Git LFS
+# Git
 RUN apt install -y --no-install-recommends \
-        git \
-        git-lfs \
-    && git lfs install --system
+        git
 
 # GUI / Rendering libraries
 RUN apt install -y --no-install-recommends \
