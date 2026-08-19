@@ -2,28 +2,27 @@ FROM debian:trixie-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Update package lists
-RUN apt update
-
 # Core utilities
-RUN apt install -y --no-install-recommends \
+RUN apt update \
+    && apt install -y --no-install-recommends \
         ca-certificates \
         curl \
         libatomic1 \
-        unzip
+        unzip \
+    && rm -rf /var/lib/apt/lists/*
 
 # Git
-RUN apt install -y --no-install-recommends \
-        git
+RUN apt update \
+    && apt install -y --no-install-recommends \
+        git \
+    && rm -rf /var/lib/apt/lists/*
 
 # GUI / Rendering libraries
-RUN apt install -y --no-install-recommends \
+RUN apt update \
+    && apt install -y --no-install-recommends \
         libgl1 \
         libgtk2.0-dev \
-        tk
-
-# Clean up
-RUN apt clean \
+        tk \
     && rm -rf /var/lib/apt/lists/*
 
 # Non-root user
