@@ -1,6 +1,6 @@
 services:
   kkallong-next:
-    image: trixie-slim:uv-nvm-bun
+    image: trixie-slim:nvm-bun
     build:
       context: .
     container_name: kkallong-next

@@ -27,10 +27,6 @@ RUN groupadd --gid $GID $USERNAME \
 USER $USERNAME
 WORKDIR /home/$USERNAME
 
-# uv installation
-ENV PATH=/home/$USERNAME/.local/bin:$PATH
-RUN curl -LsSf https://astral.sh/uv/install.sh | sh
-
 # nvm installation
 ENV PATH=/home/$USERNAME/.nvm/current/bin:$PATH
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
