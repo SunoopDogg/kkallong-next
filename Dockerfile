@@ -17,14 +17,6 @@ RUN apt update \
         git \
     && rm -rf /var/lib/apt/lists/*
 
-# GUI / Rendering libraries
-RUN apt update \
-    && apt install -y --no-install-recommends \
-        libgl1 \
-        libgtk2.0-dev \
-        tk \
-    && rm -rf /var/lib/apt/lists/*
-
 # Non-root user
 ARG USERNAME=dev
 ARG UID=1000
